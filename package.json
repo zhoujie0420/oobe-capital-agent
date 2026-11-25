@@ -1,0 +1,43 @@
+{
+  "name": "oobe-capital-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Autonomous Solana Capital & Yield Allocation Agent powered by OOBE Protocol / Steve Capital",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "simulate": "tsx scripts/demo-simulation.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "generate-wallet": "tsx scripts/generate-wallet.ts"
+  },
+  "keywords": [
+    "solana",
+    "autonomous-agent",
+    "capital-allocation",
+    "oobe-protocol",
+    "steve-capital",
+    "defi",
+    "yield-farming",
+    "multihopper",
+    "superteam"
+  ],
+  "author": "zhoujie0420",
+  "license": "MIT",
+  "Overwrite": true,
+  "dependencies": {
+    "@solana/spl-token": "^0.4.14",
+    "@solana/web3.js": "^1.98.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
+  }
+}
